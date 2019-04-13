@@ -3,6 +3,11 @@
 .home {
 
   .intro {
+    img {
+      width: 100%;
+      border-radius: 5px;
+      height: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -18,7 +23,24 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+    
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .blast {
+      @media @mobile {
+        width: 98%;
+        margin: 5%;
+      }
+    }
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -45,8 +67,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 4%;
+      margin-top: 0;
+    }
 
     .walk-text {
+      @media @mobile {
+        width: 100%;
+      }
       width: 50%;
 
       h3 {
@@ -58,12 +89,21 @@
       }
 
       .btn {
+        .signup(28%,28px,2%);
+        @media @mobile {
+        .signup(100%,56px,4%);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        width: 100%;
+        margin-left: 0;
+      }
+      
       
       img {
         width: 100%;
