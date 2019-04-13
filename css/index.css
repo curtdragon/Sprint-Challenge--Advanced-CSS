@@ -165,9 +165,9 @@ p {
 }
 .navigation {
   color: #22283B;
-  background: #f4f4f4;
+  background: #F6F6F6;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #F1F1F1;
 }
 .navigation h1 {
   text-align: center;
@@ -184,17 +184,17 @@ p {
 }
 .navigation nav a {
   font-size: 14px;
-  color: black;
+  color: #454A59;
   text-decoration: none;
 }
 .navigation nav a:hover {
   text-decoration: underline;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #F6F7F8;
   border-radius: 10px;
   display: flex;
   justify-content: center;
