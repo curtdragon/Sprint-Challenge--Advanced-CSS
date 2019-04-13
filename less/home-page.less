@@ -24,23 +24,17 @@
     flex-wrap: wrap;
     width: 100%;
     .sky {
-      @media @mobile {
-        display: none;
-      }
+      .deleteimg;
     }
-    
     .launch {
-      @media @mobile {
-        display: none;
-      }
+      .deleteimg;
     }
     .blast {
-      @media @mobile {
+      @media @phone {
         width: 98%;
         margin: 5%;
       }
     }
-    
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -65,9 +59,8 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-    @media @mobile {
+    .flexcenter;
+    @media @phone {
       flex-direction: column-reverse;
       width: 100%;
       padding: 4%;
@@ -75,7 +68,7 @@
     }
 
     .walk-text {
-      @media @mobile {
+      @media @phone {
         width: 100%;
       }
       width: 50%;
@@ -90,21 +83,25 @@
 
       .btn {
         .signup(28%,28px,2%);
-        @media @mobile {
+        cursor: pointer;
+        @media @phone {
         .signup(100%,56px,4%);
         }
+      }
+      .btn:hover {
+        background-color: orangered;
+        color: black;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @mobile {
+      @media @phone {
         width: 100%;
         margin-left: 0;
       }
-      
-      
+        
       img {
         width: 100%;
         height: auto;
